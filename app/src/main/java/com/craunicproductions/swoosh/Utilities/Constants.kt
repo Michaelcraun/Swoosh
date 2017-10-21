@@ -3,13 +3,13 @@ package com.craunicproductions.swoosh.Utilities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.craunicproductions.swoosh.Model.Player
 
 /**
  * Created by michaelcraun on 10/20/17.
  */
 
-const val EXTRA_LEAGUE = "league"
-const val EXTRA_SKILL = "skill"
+const val EXTRA_PLAYER = "player"
 
 open class BaseActivity : AppCompatActivity() {
 
