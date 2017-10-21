@@ -1,8 +1,15 @@
-package com.craunicproductions.swoosh
+package com.craunicproductions.swoosh.Utilities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
+
+/**
+ * Created by michaelcraun on 10/20/17.
+ */
+
+const val EXTRA_LEAGUE = "league"
+const val EXTRA_SKILL = "skill"
 
 open class BaseActivity : AppCompatActivity() {
 

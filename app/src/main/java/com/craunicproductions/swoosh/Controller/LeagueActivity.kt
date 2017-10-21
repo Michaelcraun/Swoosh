@@ -1,10 +1,12 @@
-package com.craunicproductions.swoosh
+package com.craunicproductions.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.craunicproductions.swoosh.R
+import com.craunicproductions.swoosh.Utilities.BaseActivity
+import com.craunicproductions.swoosh.Utilities.EXTRA_LEAGUE
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -17,7 +19,7 @@ class LeagueActivity : BaseActivity() {
     }
 
     fun leagueNextClicked(view: View) {
-        if (selectedLeague != "") {
+        if (mensToggle.isChecked || womensToggle.isChecked || coEdToggle.isChecked) {
             val skillIntent = Intent(this, SkillActivity::class.java)
             skillIntent.putExtra(EXTRA_LEAGUE, selectedLeague)
             startActivity(skillIntent)
